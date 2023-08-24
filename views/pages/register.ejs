@@ -1,0 +1,32 @@
+<%-include('../partials/head.ejs')%>
+
+<div class="form-container">
+    <h1 class="title-register">SignUp Page</h1>
+    <form action="/register" method="post" class="form-register">
+        <div class="input-register">
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Ingrese su nombre" required name="username">
+        </div>
+        <div class="input-register">
+            <label for="password">Password:</label>
+            <input type="text" placeholder="Ingrese su contraseña" required name="password">
+        </div>
+        <div class="input-register">
+            <label for="phone">Mobile No:</label>
+            <input type="text" required name="phone">
+        </div>
+        <div class="input-register">
+            <label for="telephone">Telephone:</label>
+            <input type="text" required name="telephone">
+        </div>
+
+        <button class="btn-register">Register</button>
+    </form>
+    <ul class="list-register">
+        <li><a href="/">Home</a></li>
+        <li><a href="/register">Register</a></li>
+    </ul>
+</div>
+
+
+<%-include('../partials/footer.ejs')%>
